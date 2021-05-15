@@ -1,0 +1,200 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.3, 30 April 2017) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+\usepackage{eurosym}
+\usepackage{amstext} % for \text
+\DeclareRobustCommand{\officialeuro}{%
+  \ifmmode\expandafter\text\fi
+  {\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
+  
+\definecolor{link_color}{HTML}{77b87c}
+
+
+
+\usepackage{hyperref}
+
+
+
+\hypersetup{
+colorlinks=true,
+linkcolor=link_color,
+filecolor=magnenta,
+urlcolor=link_color,
+}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{100000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{PHUMLANI MTHEMBU }
+\tagline{ Microsoft App-Factory Intern }
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{Um_pic.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{mthembup69@gmail.com}
+  \phone{+27 712 558 303}
+  \faGithub{\href{https://github.com/DuncantheeDuncan}{DuncantheeDuncan}}\
+  
+%   \phone{000-00-0000}
+
+  
+  \mailaddress{Woodcutters way, Summer Greens, Cape Town 7441}
+  Portfolio: \href{http://bit.ly/3d5SxcY}{bit.ly/3d5SxcY }
+  
+%  \location{\hspace{0.05cm}  United States} \hspace{0.3cm} 
+%  \phone{+1 (260) 445-6548} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Professional Experience}
+
+
+\cvevent{Microsoft App Factory Intern}{OPTISOLUTIONS (Department of App Factory)}{Oct 2020 -- Present}{Cape Town, Western Cape}
+\begin{itemize}
+\item Creating mobile and web applications for clients.
+\item Planning, designing, and presenting application prototypes to clients
+\item Creating technical, deployment, user manuals documents
+\item Testing, and analysing applications
+
+\end{itemize}
+% \divider
+
+% \cvsection[page1sidebar]{Other Experiences}
+% \cvevent{Java program BootCamp}{Codex Academy }{MAR 2019  -- JAN 2020 }{Cape Town, Western Cape}
+% \begin{itemize}
+% \item Building Java 8 applications with OOP's (Abstraction, Encapsulation,
+% Inheritance, and Polymorphism)
+% \item Model, populate, and query relational databases using PostgreSQL Hands-on exposure to agile practices like TDD, Kanban, and Scrum.
+% \end{itemize}
+% % \divider
+
+\clearpage
+
+
+
+\cvsection[page2sidebar]{Other Experiences}
+\cvevent{Java program BootCamp}{Codex Academy }{MAR 2019  -- JAN 2020 }{Cape Town, Western Cape}
+\begin{itemize}
+\item Building Java 8 applications with OOP's (Abstraction, Encapsulation,
+Inheritance, and Polymorphism)
+\item Model, populate, and query relational databases using PostgreSQL Hands-on exposure to agile practices like TDD, Kanban, and Scrum.
+
+\end{itemize}
+\divider
+
+
+
+\cvsection {Selected Projects}
+
+\begin{itemize}
+
+\item\textbf{2021 - OptiFY Leave Management system}
+
+The aim of this application is to minimize paper work and save HR department time. The Application set leave, calculate balance, and update it during the course and more. We worked as a team of 6 (Six) my contributions included designing, creating prototype, adding connectors for company employees, testing, Analysing performance, documenting and more.
+
+
+\item\textbf{2020 - Local Library}
+
+GitHub Repository:\underline{ \href{https://github.com/DuncantheeDuncan/LocalLibrary_v2}{github.com/DuncantheeDuncan/LocalLibrary\_v2}}
+
+The purpose of the website is to provide an online catalog for a small local library, where users can browse available books and manage their accounts. We will define a simple browse-only library that library members can use to find out what books are available. This allows us to explore the operations that are common to almost every website: reading and displaying content from a database. As we progress, the library example naturally extends to demonstrate more advanced website features. For example, we'll store information about books, copies of books, authors, and other key information.
+
+\item\textbf{2019 - CodersAtWars CodeX collaborative hackathon-project}
+GitHub Repository:\underline{ \href{https://github.com/Theophelus/codersATwars}{github.com/Theophelus/codersATwars}}
+
+This app is aiming to help code mentors to be able to track the progress of their
+students who are currently taking online courses on \underline{\href{https://www.codewars.com}{codewars.com}}. We worked as a
+team of four(4) my contributions included connecting to the Database, connecting the API's, and deploying to heroku. Technology stacks used throughout the app: Java, Vue, JavaScript, Postgresql, CSS, Bootstraps, Templates, and Axios
+
+
+\end{itemize}
+\quad
+
+
+
+
+
+
+
+
+
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
